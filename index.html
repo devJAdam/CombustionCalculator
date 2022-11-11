@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- Gogle fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <img src="chemLogo.png" />
+      <h1>John Adam's Combustion Calculator</h1>
+
+      <div>
+        <p class="equation">
+          C<sub id="xSubscript">x</sub>H<sub id="ySubscript">y</sub>O<sub
+            id="zSubscript"
+            >z</sub
+          >
+          + <span id="a">a</span>O<sub>2</sub> --> <span id="b">b</span>CO<sub
+            >2</sub
+          >
+          + <span id="c">c</span>H<sub>2</sub>O
+        </p>
+      </div>
+
+      <div class="inputContainer">
+        <div class="inputField">
+          <label for="fname">X:</label>
+          <input type="number" id="x" name="fname" /><br /><br />
+        </div>
+
+        <div class="inputField">
+          <label for="fname">Y:</label>
+          <input type="number" id="y" name="fname" /><br /><br />
+        </div>
+        <div class="inputField">
+          <label for="fname">Z:</label>
+          <input type="number" id="z" name="fname" /><br /><br />
+        </div>
+      </div>
+      <button type="submit" id="submitButton">Calculate</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
