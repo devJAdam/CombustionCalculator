@@ -15,6 +15,13 @@ document.getElementById("submitButton").onclick = () => {
     alert("Please enter a value for y!");
     return;
   } else {
+    if (z === 0) {
+      document.getElementById("oxygen").innerHTML = "";
+      document.getElementById("zSubscript").innerHTML = "";
+    } else {
+      document.getElementById("oxygen").innerHTML = "O";
+      document.getElementById("zSubscript").innerHTML = z != 1 ? z : "";
+    }
     var b = x;
     var c = y / 2;
     var a = x + y / 4 + z / 2;
