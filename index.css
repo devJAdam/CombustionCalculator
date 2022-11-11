@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container { 
+    width: 100vw;
+    height: 100vh;
+    background-image: url("background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    /* background-color: purple; */
+    flex-direction: column;
+}
+
+.equation {
+    font-size: 2.1rem;
+}
+
+#xSubscript, #ySubscript, #zSubscript{
+    color: green;
+}
+
+span {
+    color: red;
+}
+
+h1 {
+    color: #6b0da9;
+    text-align: center;
+   
+}
+h2 {
+    color: rgb(85, 85, 85);
+    font-weight: 400;
+
+}
+
+input {
+    border: #6b0da9;
+    padding: 7px;
+    border-radius: 20px;
+}
+
+button {
+    margin: 20px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    background-color:  #6b0da9;
+    color: white;
+    border: 0;
+    margin-bottom: 35px;
+    font-size: 1.3rem;
+}
+
+
+.inputField {
+padding: 20px
+}
+
+.inputContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 30px;
+}
+
+img {
+    height: 100px;
+    margin-top: 20;
+}
