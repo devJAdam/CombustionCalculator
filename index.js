@@ -22,22 +22,29 @@ document.getElementById("submitButton").onclick = () => {
       document.getElementById("oxygen").innerHTML = "O";
       document.getElementById("zSubscript").innerHTML = z != 1 ? z : "";
     }
-    var b = x;
-    var c = y / 2;
-    var a = x + y / 4 + z / 2;
+    var c = x;
+    var d = y / 2;
+    var b = x + y / 4 + z / 2;
     console.log(a);
 
-    if (a % 1 != 0) {
-      numOfDec = countDecimals(a);
-      res = reduce(a, numOfDec);
+    if (b % 1 != 0) {
+      numOfDec = countDecimals(b);
+      res = reduce(b, numOfDec);
       multiplier = res[1];
-      b = b * multiplier;
+      if (multiplier == 1) {
+        document.getElementById("a").innerHTML = "";
+      } else {
+        document.getElementById("a").innerHTML = multiplier;
+      }
       c = c * multiplier;
-      a = a * multiplier;
+      d = d * multiplier;
+      b = b * multiplier;
+    } else {
+      document.getElementById("a").innerHTML = "";
     }
-    document.getElementById("b").innerHTML = b;
     document.getElementById("c").innerHTML = c;
-    document.getElementById("a").innerHTML = a;
+    document.getElementById("d").innerHTML = d;
+    document.getElementById("b").innerHTML = b;
   }
 };
 
