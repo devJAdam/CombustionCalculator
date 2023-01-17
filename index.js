@@ -8,12 +8,14 @@ document.getElementById("submitButton").onclick = () => {
   document.getElementById("ySubscript").innerHTML = y != 1 ? y : "";
   document.getElementById("zSubscript").innerHTML = z != 1 ? z : "";
 
-  if (x == 0) {
-    alert("Please enter a value for x!");
+  if (x < 1) {
+    alert("Please enter a valid value for x!");
     return;
-  } else if (y == 0) {
-    alert("Please enter a value for y!");
+  } else if (y < 1) {
+    alert("Please enter a valid value for y!");
     return;
+  } else if (z < 0) {
+    alert("Please enter a valid value for z!");
   } else {
     if (z === 0) {
       document.getElementById("oxygen").innerHTML = "";
