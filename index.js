@@ -16,6 +16,7 @@ document.getElementById("submitButton").onclick = () => {
     return;
   } else if (z < 0) {
     alert("Please enter a valid value for z!");
+    return;
   } else {
     if (z === 0) {
       document.getElementById("oxygen").innerHTML = "";
